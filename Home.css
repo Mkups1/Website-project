@@ -1,0 +1,14 @@
+HTML{
+    background: url("img/Ludwig.jpg")no-repeat center fixed;
+    background-size: cover;
+}
+body{
+    text-align:center;
+}
+#div2{
+    background:white;
+    margin:1px 400px;
+}
+a{
+    color:white;
+}
