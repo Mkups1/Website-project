@@ -1,19 +1,11 @@
 HTML{
-    background: url("img/ludwig-ahgren.jpeg")no-repeat center fixed;
+    background: url("img/Horizonbackground.jpeg")no-repeat center fixed;
     background-size: cover;
 }
 body{
     text-align:center;
 }
-#div2{
-    background: rgba(255, 255, 255, 0.5);
-    width:50%;
-    width:fit-content;
-    font-size:60px;
-    color:black;
-    margin:190px auto;
-    border-radius: 30px;
-}
+
 a{
-    color:white;
+    color:black;
 }
