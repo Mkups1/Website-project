@@ -5,25 +5,12 @@ HTML{
 body,h1{
     text-align:center;
 }
-#p1{
-    text-align:left;
-}
-#p2{
-    text-align:right;
-}
 #div1{
     background:rgb(255, 255, 255, 0.65);
     padding:10px 100px;
     margin: 25px 50px;
     border-radius:30px ;
-}
-#bow{
-    width:100px;
-    height:90px;
-}
-#aloy{
-    width: 75px;
-    height:90px;
+    width: 950px;
 }
 a{
     color:black;
@@ -31,6 +18,13 @@ a{
 img{
     padding: 1px 10px;
 }
-
-
-
+#p1{
+    text-align:left;
+}
+#p2{
+    text-align:right;
+}
+#hzdm{
+    width:50px;
+    padding: 1px 1px 1px 1px;
+}
