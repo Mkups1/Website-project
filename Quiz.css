@@ -8,3 +8,9 @@ body{
 a{
     color:black;
 }
+#div1{
+    background:rgb(255, 255, 255, 0.65);
+    padding:10px 100px;
+    margin: 25px 50px;
+    border-radius:30px ;
+}
