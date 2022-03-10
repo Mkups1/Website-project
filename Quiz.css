@@ -14,3 +14,19 @@ a{
     margin: 25px 50px;
     border-radius:30px ;
 }
+#p1{
+    text-align: left;
+    padding:20px 1px;
+}
+button{
+    cursor:pointer;
+    font-size: 20px;
+    background:blue;
+    color:white;
+}
+h1{
+    color:blue;
+}
+#subhead{
+    color:rgb(100, 100, 255);
+}

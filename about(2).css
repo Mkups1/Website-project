@@ -2,9 +2,11 @@ HTML{
     background: url("img/horizon_zero_dawn-1.jpg")no-repeat center fixed;
     background-size: cover;
 }
+
 body,h1{
     text-align:center;
 }
+
 #div1{
     background:rgb(255, 255, 255, 0.65);
     padding:10px 100px;
@@ -12,19 +14,32 @@ body,h1{
     border-radius:30px ;
     width: 950px;
 }
+
 a{
     color:black;
 }
+
 img{
     padding: 1px 10px;
 }
+
 #p1{
     text-align:left;
 }
+
 #p2{
     text-align:right;
 }
+
 #hzdm{
     width:35px;
     vertical-align: middle;
+}
+
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#flower{
+    float:left;
+    width:200px;
 }

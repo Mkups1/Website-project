@@ -25,11 +25,23 @@ body,h1{
     width: 75px;
     height:90px;
 }
+#focus{
+    float: left;
+    width: 100px;
+}
+#tree{
+    float:right;
+    width:200px;
+}
 a{
     color:black;
 }
 img{
     padding: 1px 10px;
+}
+
+h1,h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
