@@ -39,13 +39,21 @@ function submit(){
         document.getElementById("span5").innerHTML = "Incorrect!"
     } if (correctAnswers === 5){
         document.getElementById("span6").innerHTML = "5/5 (100%)"
+        correctAnswers = 0
     } else if (correctAnswers === 4){
         document.getElementById("span6").innerHTML = "4/5 (80%)"
+        correctAnswers = 0
     } else if (correctAnswers === 3){
         document.getElementById("span6").innerHTML = "3/5 (60%)"
+        correctAnswers = 0
     } else if (correctAnswers === 2){
         document.getElementById("span6").innerHTML = "2/5 (40%)"
+        correctAnswers = 0
     } else if (correctAnswers === 1){
         document.getElementById("span6").innerHTML = "1/5 (20%)"
+        correctAnswers = 0
+    }else{
+        document.getElementById("span6").innerHTML = "0/5 (0%)"
+        correctAnswers = 0
     }
 }
