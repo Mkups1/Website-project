@@ -11,49 +11,48 @@ let correctAnswers = 0;
 document.getElementById("button").addEventListener("click", submit)
 // Event function
 function submit(){
+    correctAnswers = 0;
+    if (span6.innerHTML === "-"){
     
-    if (question1.value === "26"){
-        document.getElementById("span1").innerHTML = "Correct!"
-        correctAnswers++;
-    }else if (question1.value != "26"){
-        document.getElementById("span1").innerHTML = "Incorrect!"
-    } if (question2.value.toLowerCase() === "thunderjaw"){
-        document.getElementById("span2").innerHTML = "Correct!"
-        correctAnswers++
-    }else if (question2.value != "thunderjaw"){
-        document.getElementById("span2").innerHTML = "Incorrect!"
-    }if (question3.value.toLowerCase() === "focus"){
-        document.getElementById("span3").innerHTML = "Correct!"
-        correctAnswers++
-    }else if (question3.value != "focus"){
-        document.getElementById("span3").innerHTML = "Incorrect!"
-    }if (question4.value.toLowerCase() === "2017"){
-        document.getElementById("span4").innerHTML = "Correct!"
-        correctAnswers++
-    }else if (question4.value != "2017"){
-        document.getElementById("span4").innerHTML = "Incorrect!"
-    }if (question5.value.toLowerCase() === "horizon forbidden west"){
-        correctAnswers++
-        document.getElementById("span5").innerHTML = "Correct!"
-    }else if (question5.value != "horizon forbidden west"){
-        document.getElementById("span5").innerHTML = "Incorrect!"
-    } if (correctAnswers === 5){
-        document.getElementById("span6").innerHTML = "5/5 (100%)"
-        correctAnswers = 0
-    } else if (correctAnswers === 4){
-        document.getElementById("span6").innerHTML = "4/5 (80%)"
-        correctAnswers = 0
-    } else if (correctAnswers === 3){
-        document.getElementById("span6").innerHTML = "3/5 (60%)"
-        correctAnswers = 0
-    } else if (correctAnswers === 2){
-        document.getElementById("span6").innerHTML = "2/5 (40%)"
-        correctAnswers = 0
-    } else if (correctAnswers === 1){
-        document.getElementById("span6").innerHTML = "1/5 (20%)"
-        correctAnswers = 0
-    }else{
-        document.getElementById("span6").innerHTML = "0/5 (0%)"
-        correctAnswers = 0
+        if (question1.value === "26"){
+            document.getElementById("span1").innerHTML = "Correct!"
+            correctAnswers++;
+            question1.classList.add("correct")
+        } else {
+            document.getElementById("span1").innerHTML = "Incorrect!"
+            question1.classList.add("incorrect")
+        } if (question2.value.toLowerCase() === "thunderjaw" ||            question2.value.toLowerCase() === "the thunderjaw"){
+            document.getElementById("span2").innerHTML = "Correct!"
+            correctAnswers++
+            question2.classList.add("correct")
+        } else {
+            document.getElementById("span2").innerHTML = "Incorrect!"
+            question2.classList.add("incorrect")
+        } if (question3.value.toLowerCase() === "focus" || question3.value.toLowerCase() === "the focus"){
+            document.getElementById("span3").innerHTML = "Correct!"
+            correctAnswers++
+            question3.classList.add("correct")
+        } else {
+            document.getElementById("span3").innerHTML = "Incorrect!"
+            question3.classList.add("incorrect")
+        } if (question4.value.toLowerCase() === "2017"){
+            document.getElementById("span4").innerHTML = "Correct!"
+            correctAnswers++
+            question4.classList.add("correct")
+        } else {
+            document.getElementById("span4").innerHTML = "Incorrect!"
+            question4.classList.add("incorrect")
+        } if (question5.value.toLowerCase() === "horizon forbidden west" ||question5.value.toLowerCase() === "forbidden west"){
+            document.getElementById("span5").innerHTML = "Correct!"
+            correctAnswers++
+            question5.classList.add("correct")
+        } else {
+            document.getElementById("span5").innerHTML = "Incorrect!"
+            question5.classList.add("incorrect")
+        }
+        span6.innerHTML = correctAnswers;
+        span7.innerHTML = correctAnswers * 20
+    } else if (span6.innerHTML != "-"){
+        document.getElementById("span8").innerHTML = "You can only submit once"
     }
 }
