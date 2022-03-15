@@ -13,15 +13,15 @@ document.getElementById("button").addEventListener("click", submit)
 function submit(){
     correctAnswers = 0;
     if (span6.innerHTML === "-"){
-    
-        if (question1.value === "26"){
+         if (question1.value === "26"){
             document.getElementById("span1").innerHTML = "Correct!"
             correctAnswers++;
             question1.classList.add("correct")
+            document.getElementById("span9").innerHTML = "Are you even trying?"
         } else {
             document.getElementById("span1").innerHTML = "Incorrect!"
             question1.classList.add("incorrect")
-        } if (question2.value.toLowerCase() === "thunderjaw" ||            question2.value.toLowerCase() === "the thunderjaw"){
+        } if (question2.value.toLowerCase() === "thunderjaw" ||question2.value.toLowerCase() === "the thunderjaw"){
             document.getElementById("span2").innerHTML = "Correct!"
             correctAnswers++
             question2.classList.add("correct")
@@ -49,6 +49,18 @@ function submit(){
         } else {
             document.getElementById("span5").innerHTML = "Incorrect!"
             question5.classList.add("incorrect")
+        } if (correctAnswers === 0){
+            document.getElementById("span9").innerHTML = "Are you even trying?"
+        } else if (correctAnswers === 1){
+         document.getElementById("span9").innerHTML = "Are you even trying?"
+        } else if (correctAnswers === 2){
+         document.getElementById("span9").innerHTML = "Go back to the about page."
+        } else if (correctAnswers === 3){
+         document.getElementById("span9").innerHTML = "I mean, you're kind of getting there."
+        } else if (correctAnswers === 4){
+         document.getElementById("span9").innerHTML = "So close!"
+        } else {
+            document.getElementById("span9").innerHTML = "Congratulations!"
         }
         span6.innerHTML = correctAnswers;
         span7.innerHTML = correctAnswers * 20
